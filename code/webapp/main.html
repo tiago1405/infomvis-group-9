@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- link to the CSS files -->
+    <title>TEST FILE</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script type="module" src="js/BarChart.js"></script>
+    <script type="module" src="js/FlagLoading.js"></script>
+    <script type="module" src="js/LineChart.js"></script>
+
+
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="row">
+        <h1>World Freedom Visualisation</h1>
+    </div>
+
+    <div class="row">
+        <!-- Left side: Two squares underneath each other -->
+        <div class="col-md-7">
+            <div class="wholeFlagArea">
+                <div class="square bg-primary mb-4" id="upperLeft">
+                    <h3>Freedom Leaderboard</h3>
+                </div>
+                <div class="square bg-primary mb-4">
+
+                    <ul class="flag-list" id="FreeCountriesList">
+
+                    </ul>
+                </div>
+                <div class="square bg-primary mb-4" id="allFlags">
+
+                    <ul class="flag-list" id="SemiFreeCountriesList">
+
+                    </ul>
+
+                </div>
+                <div class="square bg-primary mb-4">
+
+                    <ul class="flag-list" id="NotFreeCountriesList">
+
+                    </ul>
+
+
+                </div>
+            </div>
+            <div id="flowers" class="square flowerBG">
+                <div class="flex-container">
+                    <h3>Freedom Flowers</h3>
+                    <div id="year-dropdown-container"></div>
+                </div>
+                <div id="flowersContainer" class="flowersContainer"></div>
+                <script type="module">
+                </script>
+            </div>
+        </div>
+
+        <!-- Right side: One continuous column -->
+        <div class="col-md-5">
+            <div class="continuous-column-graphs">
+                <div id="features-dropdown-container"></div>
+                <div>
+                    <div id="bar-chart-container">
+                        <h3>Bar Chart</h3>
+                        <!-- <script src="js/BarChart.js"></script> -->
+                    </div>
+                    <div id="scatter-plot-container">
+                        <h3>Scatter Plot</h3>
+                    </div>
+                    <div id="flower-container-2">
+                    </div>
+                    <div id="line-chart-container">
+                        <h3>Line Chart</h3>
+                        <!-- <script src="js/LineChart.js"></script> -->
+                    </div>
+                </div>
+                <div>
+                    <div id="chart-area3"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="row align-content-end">
+        <p>Instructions:<br>Click a flag in the Leaderboard to get a Flower for it. You can select up to 3 flags. You can click on the flag again to deselect it.
+            <br>Click a petal on one of the flowers to check out that data in a coordinated view on the right.
+            <br>Tooltips are shown when hovering over parts of the visualisation, so if you’re not sure what something represents, try to hover over it.
+        </p>
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,190 @@
+/* Dropdown Button */
+.dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row; /* Horizontal arrangement */
+    align-items: center; /* Vertically center items */
+}
+
+/* Adjust spacing as needed */
+.flex-container h3 {
+    margin-right: 65%; 
+}
+
+.year-dropdown {
+    width: auto;
+    padding: 5.5px;
+    margin-bottom: 5px; 
+    border: 0px solid #ccc;
+    border-radius: 0px;
+    background-color: #fff;
+    font-size: 16px;
+    color: #333;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.year-dropdown-label {
+    width: auto;
+    padding: 5px;
+    padding-right: 5px; 
+    margin-bottom: 5px; 
+    margin-left: 5px;
+
+    background-color: white;
+    display: inline-block; 
+    vertical-align: middle;
+}
+
+.features-dropdown {
+    width: auto;
+    padding: 5.5px;
+    margin-bottom: 5px; 
+    border: 0px solid #ccc;
+    border-radius: 0px;
+    background-color: #fff;
+    font-size: 16px;
+    color: #333;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.features-dropdown-label {
+    width: auto;
+    padding: 5px;
+    padding-right: 5px; 
+    margin-bottom: 5px; 
+    margin-left: 5px;
+
+    background-color: white;
+    display: inline-block; 
+    vertical-align: middle;
+}
+
+.flag {
+    width: 90px; /* Adjust the width of each flag as needed */
+    height: 60px; /* Adjust the height of each flag as needed */
+    margin-right: 10px; /* Adjust the spacing between flags as needed */
+    border-radius: 5%;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.flag-selected {
+    border: 0.5rem ridge rgb(211, 210, 210);
+    border-radius: 4px;
+    width: auto;
+    height: auto;
+    background-color: rgb(211, 210, 210);
+}
+
+.flag img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.flag-list {
+
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.flag-list li {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+}
+
+#FreeCountriesList {
+    background: #14560f;;
+}
+
+#SemiFreeCountriesList {
+    background: #665216
+}
+
+#NotFreeCountriesList {
+    background: #641515
+}
+.wholeFlagArea {
+    background: antiquewhite;
+}
+
+.continuous-column-graphs {
+    width: 800px;
+    background-color: #f2f2f2; /* Background color for the continuous column */
+    padding: 20px; /* Add padding to create spacing within the div */
+    border: 1px solid #ddd; /* Add a border if needed */
+    /* Add more styles as needed */
+}
+
+#flowersContainer {
+    width: 762px;
+    height: 600px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.flowerBG{
+    background-color: rgb(221, 230, 222);
+}
+
+
+
+div.tooltip {
+    position: absolute;
+    text-align: center;
+    padding: .2rem;
+    background: #313639;
+    color: #f9f9f9;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+    font-size: .7rem;
+}
